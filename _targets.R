@@ -3,7 +3,7 @@ library(targets)
 library(httr)
 library(googledrive)
 library(arrow)
-library(future)
+library(future) 
 
 plan(multisession, workers = 2)
 

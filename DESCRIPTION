@@ -1,0 +1,15 @@
+Package: brregpipeline
+Title: BRREG Data Pipeline
+Version: 0.1.0
+Authors@R: c(person(given = "Your Name", family = "YourSurname", email = "you@example.com", role = c("aut", "cre")))
+Description: A pipeline to download BRREG data, convert to Parquet and upload to Google Drive.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports:
+  targets,
+  httr,
+  googledrive,
+  arrow,
+  future
