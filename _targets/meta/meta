@@ -1,0 +1,14 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+download_brreg_data|function|dcf4f9906ffbbc35|||||||||||||||
+enhets_file|stem|8e7b29989b8680a0|34a2a59618c17537|8bc579c57e4b389e|-1353253017|/tmp/RtmpCiSZol/filec902f96f038.csv|t20159.0776946558s|s139543604b|139543604|file|local|vector|||125.572||
+underenhets_file|stem|a7447411e27319fb|9000576a19e01140|8bc579c57e4b389e|-2048267797|/tmp/RtmpCiSZol/filec90579b4b3d.csv|t20159.0782711437s|s57658275b|57658275|file|local|vector|||49.727||
+upload_result|stem|0e3ad9a9a65bf161|f4ec94317af33f51|d7ad60088bf558f0|-849544237||t20159.0783529039s|s1631b|1631|rds|local|vector|||7.029||
+download_file|function|c1bd466af004fc3d
+upload_to_drive|function|92d1d5cb2a04718f
+csv_to_parquet|function|491e765270ca715e
+underenhets_csv|stem|a7447411e27319fb|9000576a19e01140|8bc579c57e4b389e|-1436578212|/tmp/RtmptVFVTb/file3345923c33e.csv|t20159.0881065771s|s57658275b|57658275|file|local|vector|||51.062||
+enhets_csv|stem|8e7b29989b8680a0|34a2a59618c17537|8bc579c57e4b389e|661768630|/tmp/RtmptVFVTb/file334798fa2ea.csv|t20159.0895071945s|s139543604b|139543604|file|local|vector|||120.969||
+underenhets_parquet|stem|8b55469492c833ef|898b22ce34548c83|26e9774c616c1cdc|-660361352|data/UnderEnhetsRegisteret_2025-03-12.parquet|t20159.089758864s|s54179929b|54179929|file|local|vector|||21.682||
+enhets_parquet|stem|f5972527fadcec6e|df64b8f815b1c95c|9329147e9acfe19f|1555485468|data/EnhetsRegisteret_2025-03-12.parquet|t20159.0902422027s|s160109925b|160109925|file|local|vector|||41.737||
+upload_underenhets_parquet|stem|734958e853fbac52|2029b4200acb2518|067e63a258f901f1|-2020069508||t20159.0902738234s|s1639b|1639|rds|local|vector|||2.678||
+upload_enhets_parquet|stem|e95d85a1469d7e7e|97be24146af3ec55|7a436cc9e526bc65|1691326067||t20159.0903205832s|s1636b|1636|rds|local|vector|||4.036||

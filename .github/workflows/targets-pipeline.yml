@@ -1,0 +1,27 @@
+
+name: Run Targets Pipeline
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v2
+
+      - name: Install dependencies
+        run: |
+          install.packages(c("targets", "httr", "googledrive", "arrow", "future"))
+        shell: Rscript {0}
+
+      - name: Run pipeline
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+        run: |
+          writeLines(Sys.getenv("GOOGLE_DRIVE_CREDENTIALS"), "credentials.json")
+          targets::tar_make()
+        shell: Rscript {0}
+
